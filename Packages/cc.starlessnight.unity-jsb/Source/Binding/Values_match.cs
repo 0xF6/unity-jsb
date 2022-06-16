@@ -126,6 +126,7 @@ namespace QuickJS.Binding
                 {
                     return JSApi.JS_IsArray(ctx, jsValue) == 1;
                 }
+                
                 return type == typeof(ScriptValue) || type.IsSubclassOf(typeof(ScriptValue));
             }
 
